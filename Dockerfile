@@ -1,7 +1,7 @@
 # parameters
-ARG REPO_NAME="CSCE274-base"
-ARG DESCRIPTION="Base class repo for sc CSCE 274"
-ARG MAINTAINER="Ioannis Rekleitis (yiannisr@cse.sc.edu)"
+ARG REPO_NAME="duckietown"
+ARG DESCRIPTION="CSCE274 duckietown code"
+ARG MAINTAINER="Timothy Gedney (tgedney@email.sc.edu)"
 # pick an icon from: https://fontawesome.com/v4.7.0/icons/
 ARG ICON="cube"
 
