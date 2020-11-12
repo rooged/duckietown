@@ -5,8 +5,8 @@
 	</group>
 	
 	<group ns="homework4">
-		<node pkg="homework4" name="homework4" type="publish.py"/>
-		<node pkg="homework4" name="homework4" type="subscribe.py"/>
+		<node pkg="homework4" name="publish" type="publish.py"/>
+		<node pkg="homework4" name="subscribe" type="subscribe.py"/>
 	</group>
 	
 </launch>
