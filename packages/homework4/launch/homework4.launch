@@ -1,0 +1,12 @@
+<launch>
+
+	<group ns="homework1">
+		<node pkg="homework1" name="homework1" type="homework1.py"/>
+	</group>
+	
+	<group ns="homework4">
+		<node pkg="homework4" name="homework4" type="publish.py"/>
+		<node pkg="homework4" name="homework4" type="subscribe.py"/>
+	</group>
+	
+</launch>
