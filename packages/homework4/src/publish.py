@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 
 import rospy
-from std_msgs.msg import String
+from std_msgs.msg import Float32
 
 def talker():
-	pub = rospy.Publisher("/homework1/delta", String, queue_size=10)
+	pub = rospy.Publisher("/homework1/delta", Float32, queue_size=10)
 	rospy.init_node('publish', anonymous=True)
 	rate = rospy.Rate(10) # 10hz
+	total = 0
 	while not rospy.is_shutdown():
-		hello_str = "hello world %s" % rospy.get_time()
-		rospy.loginfo(hello_str)
-		pub.publish(hello_str)
+		total = total + 1
+		pub.publish(total)
 		rate.sleep()
 
 if __name__ == '__main__':
