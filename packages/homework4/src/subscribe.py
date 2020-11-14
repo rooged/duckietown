@@ -9,7 +9,7 @@ def callback(data):
 def listener():
 	rospy.init_node('subscribe', anonymous=True)
 	
-	rospy.Subscriber("delta", String, callback)
+	rospy.Subscriber("/homework1/total", String, callback)
 	
 	rospy.spin()
 		
