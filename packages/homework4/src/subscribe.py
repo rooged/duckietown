@@ -5,7 +5,6 @@ from std_msgs.msg import Float32
 
 def callback(data):
 	rospy.loginfo("log info %s", data.data)
-
 def listener():
 	rospy.init_node('subscribe', anonymous=True)
 	
