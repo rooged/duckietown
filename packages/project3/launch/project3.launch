@@ -1,0 +1,5 @@
+<launch>
+	<group ns="$(env VEHICLE_NAME)">
+		<node pkg="project3" name="project3" type="project3.py"/>
+	</group>
+</launch>
