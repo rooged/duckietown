@@ -1,5 +1,5 @@
 <launch>
-	<group ns="$(env VEHICLE_NAME)">
+	<group ns="duck69">
 		<node pkg="project3" name="project3" type="project3.py"/>
 	</group>
 </launch>
