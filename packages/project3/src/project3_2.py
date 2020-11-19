@@ -9,16 +9,18 @@ def talker():
 	rospy.init_node('project3_2', anonymous=True)
 	rate = rospy.Rate(10) #10 Hz
 	time = 0
+	turnTime = 0
 	while not rospy.is_shutdown():
 		pub.publish(Twist2DStamped(header=None, v=0.3, omega=0))
-		if (time % 100 == 0) {
-			turn();
-		}
+		if time == 35:
+			pub.publish(Twist2DStamped(header=None, v=0, omega=0))
+			while turnTime < 1650:
+				pub.publish(Twist2DStamped(header=None, v=0, omega=9))
+				turnTime = turnTime + 1
+			time = 0
+			turnTime = 0
 		time = time + 1
 		rate.sleep()
-		
-def turn():
-	pub.publish(Twist2DStamped(header=None, v=0, omega=8))
 		
 if __name__ == '__main__':
 	try:
